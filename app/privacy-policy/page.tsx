@@ -1,12 +1,15 @@
 "use client"
 import { useState } from "react"
 import { ContactModal } from "@/components/contact-modal"
+import { Footer } from "@/components/footer"
+import { Header } from "@/components/header"
 
 export default function PrivacyPolicyPage() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false)
 
   return (
     <>
+    <Header />
       <main className="flex-1 py-16 px-5">
         <div className="max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Privacy Policy</h1>
@@ -100,7 +103,7 @@ export default function PrivacyPolicyPage() {
           </div>
         </div>
       </main>
-
+      <Footer />
       <ContactModal isOpen={isContactModalOpen} onClose={() => setIsContactModalOpen(false)} />
     </>
   )

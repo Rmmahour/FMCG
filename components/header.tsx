@@ -40,7 +40,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <Link href="/" className="flex items-center gap-3" aria-label="Basiq360 Home">
               <Image
-                src="basiq360-logo.png"
+                src="/fmcg-track-trace/basiq360-logo.png"
                 alt="Basiq360 Logo"
                 width={160}
                 height={32}
@@ -51,7 +51,7 @@ export function Header() {
 
           <nav className="hidden md:flex items-center gap-6 text-[0.9rem]" aria-label="Primary">
             <Link
-              href="#why"
+              href="/#why"
               className={`font-medium transition-colors ${
                 isActive("why") ? "text-[#0052cc]" : "text-slate-600 hover:text-[#0052cc]"
               }`}
@@ -59,7 +59,7 @@ export function Header() {
               Why serialization
             </Link>
             <Link
-              href="#offers"
+              href="/#offers"
               className={`font-medium transition-colors ${
                 isActive("offers") ? "text-[#0052cc]" : "text-slate-600 hover:text-[#0052cc]"
               }`}
@@ -67,7 +67,7 @@ export function Header() {
               Platform value
             </Link>
             <Link
-              href="#tech"
+              href="/#tech"
               className={`font-medium transition-colors ${
                 isActive("tech") ? "text-[#0052cc]" : "text-slate-600 hover:text-[#0052cc]"
               }`}
@@ -75,7 +75,7 @@ export function Header() {
               Technology
             </Link>
             <Link
-              href="#case"
+              href="/#case"
               className={`font-medium transition-colors ${
                 isActive("case") ? "text-[#0052cc]" : "text-slate-600 hover:text-[#0052cc]"
               }`}

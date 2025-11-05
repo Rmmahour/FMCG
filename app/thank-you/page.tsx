@@ -1,5 +1,7 @@
 import Link from "next/link"
 import type { Metadata } from "next"
+import { Footer } from "@/components/footer"
+import { Header } from "@/components/header"
 
 export const metadata: Metadata = {
   title: "Thank You | Basiq360 Connected Packaging",
@@ -8,6 +10,8 @@ export const metadata: Metadata = {
 
 export default function ThankYouPage() {
   return (
+    <>
+      <Header />
     <main className="flex-1 flex items-center justify-center py-20 px-5">
       <div className="max-w-2xl text-center">
         <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-gradient-to-br from-[#18b57c] to-[#22c55e] mb-6">
@@ -38,5 +42,8 @@ export default function ThankYouPage() {
         </div>
       </div>
     </main>
+    <Footer />
+    </>
+
   )
 }

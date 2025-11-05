@@ -4,8 +4,6 @@ import { GoogleTagManager, GoogleAnalytics } from '@next/third-parties/google'
 import { Inter } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
 import "./globals.css"
-import { Header } from "@/components/header"
-import { Footer } from "@/components/footer"
 import { CookieConsent } from "@/components/cookie-consent"
 
 const inter = Inter({ subsets: ["latin"] })
@@ -38,11 +36,11 @@ export default function RootLayout({
       <body
         className={`${inter.className} antialiased min-h-screen flex flex-col bg-gradient-to-br from-[#e6f4ff] via-white to-[#fdf7ec]`}
       >
-        <Header />
+        
         {children}
-        <GoogleTagManager gtmId="GTM-MM5PWB94" />
-        <GoogleAnalytics gaId="G-M6HMK9JLLG" />
-        <Footer />
+        {/* <GoogleTagManager gtmId="GTM-MM5PWB94" />
+        <GoogleAnalytics gaId="G-M6HMK9JLLG" /> */}
+        
         <CookieConsent />
         <Analytics />
       </body>
