@@ -40,7 +40,7 @@ export function Header() {
           <div className="flex items-center gap-3">
             <Link href="/" className="flex items-center gap-3" aria-label="Basiq360 Home">
               <Image
-                src="/images/basiq360-logo.png"
+                src="basiq360-logo.png"
                 alt="Basiq360 Logo"
                 width={160}
                 height={32}

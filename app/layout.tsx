@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <link rel="icon" href="/images/favicon.webp" />
+        <link rel="icon" href="favicon.webp" />
       </head>
       <body
         className={`${inter.className} antialiased min-h-screen flex flex-col bg-gradient-to-br from-[#e6f4ff] via-white to-[#fdf7ec]`}
