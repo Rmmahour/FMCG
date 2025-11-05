@@ -38,8 +38,8 @@ export default function RootLayout({
       >
         
         {children}
-        {/* <GoogleTagManager gtmId="GTM-MM5PWB94" />
-        <GoogleAnalytics gaId="G-M6HMK9JLLG" /> */}
+        <GoogleTagManager gtmId="GTM-MM5PWB94" />
+        <GoogleAnalytics gaId="G-M6HMK9JLLG" />
         
         <CookieConsent />
         <Analytics />
